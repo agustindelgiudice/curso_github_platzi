@@ -10,7 +10,10 @@
     git init
     git add
     git show
+    git remote add origin (add url)
+    git remote -v (te muestra el repositorio fetch y push) la "v" significa verbal
     git log
+    git pull origin master --allowrelated-histories
     git log --stat
     git rm --cached historia.txt (elimina el add)
     git diff
@@ -31,7 +34,7 @@
     git log --grep=“INVIE” –i: Busca los commits que cumplan sin importar mayúsculas o minúsculas.
     git log – index.html: Busca los commits en un archivo en específico.
     git log -S “Por contenido”: Buscar los commits con el contenido dentro del archivo.
-    git log > log.txt: guardar los logs en un archivo txt
+    git log log.txt: guardar los logs en un archivo txt
     Aporte creado por: HellenBar
     git shortlog: Indica que commits ha realizado un usuario, mostrando el usuario y el título de sus commits.
     git config --global
@@ -40,6 +43,13 @@
     git reset --soft (vuelve a la version anterior pero queda en staged)
     !un solo guion - usa las letras ls -al para acceder rapidamente a un comando
     ! dos guiones -- significa una palabra como la palabra global
+
+
+    !para configurar el ssh primero hay que entrar a 
+    git config -l
+    git config global user.email "dgagustin@outlook.com"
+    !para la llave SSH
+    ssh-keygen -t rsa -b 4096 -C "dgagustin@outlook.com"
 
     * Git reset y git rm son comandos con utilidades muy diferentes, pero se pueden confundir muy facilmente
 
