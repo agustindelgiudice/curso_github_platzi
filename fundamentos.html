@@ -14,7 +14,7 @@
     git remote -v (te muestra el repositorio fetch y push) la "v" significa verbal
     git log
     git pull origin master --allowrelated-histories
-    git log --stat
+   
     git rm --cached historia.txt (elimina el add)
     git diff
     git config (como ver todas las configuraciones de git)
@@ -23,6 +23,9 @@
     git log --oneline: Te muestra el id commit y el título del commit.
     git log --decorate: Te muestra donde se encuentra el head point en el log.
     git log --stat: Explica el número de líneas que se cambiaron brevemente.
+    git log --all (te muestra todo el historial que se hizo hasta ahora)
+    git log --all --graph --oneline (te muestra el arbolito)
+    ! alias arbolito="git log --all --graph --decorate --oneline" (guardamos ese arbolito dentro de esa variable llamada arbolito)
     git log -p: Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
     git log --pretty=format:"%cn hizo un commit %h el dia %cd": Muestra mensajes personalizados de los commits.
     git log -3: Limitamos el número de commits.
